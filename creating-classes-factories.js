@@ -11,10 +11,63 @@ class Hamster {
         console.log('nibble nibble')
     }
     getPrice(){
-        console.log(this.price)
+        return this.price
     }
 }
 
-const Hamtaro = new Hamster('Hamtaro')
+// const hamster1 = new Hamster ('Hamtaro')
+// console.log(hamster1)
 
-console.log(Hamtaro)
+class Person {
+    constructor(nameParam){
+        this.name = nameParam;
+        this.age = 0;
+        this.height = 0;
+        this.weight = 0;
+        this.mood = 0;
+        this.hamsters = [];
+        this.bankAccount = 0;
+    }
+    getName(){
+        console.log(this.name)
+    }
+    getAge(){
+        console.log(this.age)
+    }
+    getWeight(){
+        console.log(this.weight)
+    }
+    greet(){
+        console.log(`${this.name} says greetings.`)
+    }
+    eat(){
+        this.weight++, 
+        this.mood++
+    }
+    exercise(){
+        this.weight--
+    }
+    ageUp(){
+        this.age++,
+        this.height++,
+        this.weight++,
+        this.mood--,
+        this.bankAccount+=10
+    }
+    buyHamter(hamster){
+        this.hamsters.push(hamster),
+        this.mood+=10
+        this.bankAccount -= hamster.getPrice()
+    }
+}
+
+// const person1 = new Person('priyanka')
+// person1.eat()
+// person1.exercise()
+// person1.ageUp()
+// person1.ageUp()
+// console.log(person1)
+// person1.buyHamter(hamster1)
+// console.log(person1)
+
+
