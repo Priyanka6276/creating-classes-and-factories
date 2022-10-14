@@ -70,4 +70,62 @@ class Person {
 // person1.buyHamter(hamster1)
 // console.log(person1)
 
+const tim = new Person ('Timmy')
 
+tim.ageUp() 
+tim.ageUp() 
+tim.ageUp()
+tim.ageUp()
+tim.ageUp()
+
+tim.eat()
+tim.eat()
+tim.eat()
+tim.eat()
+tim.eat()
+
+tim.exercise()
+tim.exercise()
+tim.exercise()
+tim.exercise()
+tim.exercise()
+
+tim.ageUp() 
+tim.ageUp() 
+tim.ageUp()
+tim.ageUp()
+tim.ageUp()
+tim.ageUp() 
+tim.ageUp()
+tim.ageUp()
+tim.ageUp()
+
+const gus = new Hamster('Gus')
+
+gus.owner = "Timmy"
+
+tim.buyHamter(gus)
+
+tim.ageUp() 
+tim.ageUp() 
+tim.ageUp()
+tim.ageUp()
+tim.ageUp()
+tim.ageUp() 
+tim.ageUp()
+tim.ageUp()
+tim.ageUp()
+tim.ageUp()
+tim.ageUp()
+tim.ageUp() 
+tim.ageUp()
+tim.ageUp()
+tim.ageUp()
+
+tim.eat()
+tim.eat()
+
+tim.exercise()
+tim.exercise()
+
+console.log(tim)
