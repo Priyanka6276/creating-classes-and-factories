@@ -1,3 +1,5 @@
+//==============================Hamster==================================
+
 class Hamster {
     constructor(nameParam) {
         this.owner = "";
@@ -129,3 +131,32 @@ tim.exercise()
 tim.exercise()
 
 console.log(tim)
+
+
+
+
+//==============================CHEF MAKES DINNER ============================
+
+class Dinner {
+    constructor(appetizerParam, entreeParam, dessertParam){
+        this.appetizer = appetizerParam;
+        this.entree = entreeParam;
+        this.dessert = dessertParam;
+    }
+}
+
+class Chef {
+    constructor(){
+        this.dinner = []
+    }
+    makeDinner(appetizer,entree,dessert){
+        const newDinner = new Dinner (appetizer,entree,dessert)
+        this.dinner.push(newDinner)
+    }
+}
+
+const chef1 = new Chef ()
+
+chef1.makeDinner('calimari','pizza', 'chocolate cake')
+
+console.log(chef1)
